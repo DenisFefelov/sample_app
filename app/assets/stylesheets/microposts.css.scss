@@ -1,0 +1,36 @@
+@import "constants";
+/* microposts */
+
+.microposts {
+  list-style: none;
+  margin: 10px 0 0 0;
+
+  li {
+    padding: 10px 0;
+    border-bottom: 1px solid $gray;
+    overflow:hidden;
+    span{
+     
+      color: black;
+    }
+    .user{
+      font-weight:bold;
+      text-align:left;
+      float: left;
+      width:40%;
+      clear:right;
+   
+    }  
+    .content {
+        clear:right;
+        margin-left:65px;
+    }
+    .timestamp {
+      width: 40%;
+        text-align:right;
+        float: right;
+
+    }
+    
+  }
+}

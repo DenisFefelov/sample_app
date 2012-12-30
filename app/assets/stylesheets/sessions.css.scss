@@ -1,3 +1,27 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.user_info_container{
+  width: 500px;
+  height: auto;
+  float: none;
+  margin: 0 auto 0 auto;
+  border: 1px solid #555;
+  padding: 30px;
+  input[type="text"], input[type="password"]{
+    border-radius:4px;
+    padding: 6px 5px;
+    //height: 30px;
+    display: block;
+    margin: 10px auto;
+  }
+  //input[type="submit"]{
+  //  width: auto;
+  //  float: none;
+  //  display: block;
+  //  margin: 10px auto;
+  //}
+  a{
+    color:blue;
+  }
+}

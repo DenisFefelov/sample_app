@@ -1,0 +1,179 @@
+
+@import "constants";
+
+
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+body {
+  padding: 105px 0px 45px 0px;
+  margin: 0px;
+  .container {
+    background: $grayLighter; 
+    height: auto !important; /*Cause footer to stick to bottom in IE 6*/
+    margin: 20px $marginSize auto $marginSize; 
+    overflow:auto; 
+    padding: 0px; 
+    height:100%;
+    min-height: 100%;
+  }
+}
+
+
+
+
+/* header */
+header {
+  position  :fixed;
+  left:0px;
+  top:0px;
+  border    :1px solid #000000;
+  background:black ; 
+  width     :100%;
+  display: block;
+
+}
+
+header #header_container{
+ position  :relative;
+ border    :1px solid #000000;
+ background:black ; 
+ display: block;
+ min-width: 600px;
+ margin : 0 $marginSize 0 $marginSize
+}
+
+#header_container #logo{
+    float: left;
+    height:65px;
+    overflow: hidden;
+    display: block;
+    margin-top: 0px;
+    a{
+      img{
+        border    :1px solid #000000;
+      }
+    }
+}
+
+#header_container #headertext{
+  color: $white;
+  text-align:right; 
+  position:relative;
+  float: right;
+  height:65px;
+  width: 350px;
+  
+  overflow: hidden;
+  hgroup {
+    overflow: hidden;
+    
+    letter-spacing: -1px;
+    font-family: Georgia,"Nimbus Roman No9 L",serif;
+    font-style: italic;
+    h1 { 
+      color: $white;
+      text-align:left; 
+      margin-bottom: 0px;
+      margin-top: 5px;
+      display: block;
+      font-size: 25pt;
+      
+    }
+    h4 { 
+      color: $white;
+      font-size: 10pt;
+      text-align: right;
+      margin: 5px 30px 10px 0;
+      display: block;
+    }
+  }
+}
+
+div#header_container #menu{
+  background: $darkGaray; 
+  width:100%; 
+  clear:both;
+  overflow:hidden;
+  font-family: "BebasNeueRegular", "PTSansRegular", "Myriad Pro", "Trebuchet MS", Tahoma, Arial, Helvetica, Geneva, sans-serif;
+  font-size: 21px;
+  line-height: 23px;
+  text-transform: uppercase;
+  border-radius: 6px 6px 0px 0px; 
+ 
+  ul {
+    float: right;
+ 
+  }
+}
+
+
+
+
+/* footer */
+
+footer {
+  position  :fixed;
+  left:0px;
+  bottom:0px;
+  border-top: 1px solid $grayMediumLight;
+  background: black ; 
+  width: 100%;
+  height: 40px;
+  display: block;
+  overflow: hidden;
+  color: $grayMediumLight;
+  nav {
+    background: $darkGaray; 
+    display: block;
+    min-width: 600px;
+    margin : 0 $marginSize 0 $marginSize;
+    overflow: hidden;
+    height: 30px;
+    border-radius: 0px 0px 6px 6px;
+  }
+  
+ 
+  ul {
+    float: right;
+    &:last-child {
+         float: left;
+      }
+  }
+}
+
+a {
+    color: $gray;
+    padding-right: 32px;
+    padding-left: 32px;
+    text-decoration: none;
+    &:hover { 
+      color: $white;
+      //font-weight:bold;
+    }
+  } 
+  
+ul {
+    list-style: none;
+    margin: 5px 20px 5px 20px;
+    padding-right: 0px;
+    padding-left: 0px;
+
+    li {
+      float: left;
+      margin: 0px 10px 0px 10px;
+      
+      border-right :1px solid $grayLight;
+      &:last-child {
+         border-right: none;
+      }
+    }
+  }
+
+
+
+

@@ -1,3 +1,77 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+@import "constants";
+$userAsideSize: 350px;
+
+#row { 
+  width: 100%;
+min-width: 600px;
+margin: 0 auto; 
+}
+#user_info { 
+  
+padding: 10px;
+float: left; 
+  width:$userAsideSize; 
+  height:100%; 
+  margin:10px 20px; 
+  overflow:hidden;
+  clear:both;
+}
+  
+#posts { 
+  
+  margin-left: $userAsideSize;
+
+padding: 10px; 
+}
+
+.pagination {
+  margin: 20px 0;
+  a {
+    //color: $grayLight;
+    padding-right: 32px;
+    padding-left: 32px;
+    text-decoration: none;
+    &:hover { 
+      //color: $white;
+      //font-weight:bold;
+    }
+  }  
+}
+
+#error_explanation {
+  color: #f00;
+  ul {
+    list-style: none;
+    margin: 0 0 18px 0;
+  }
+}
+
+.field_with_errors {
+  @extend .control-group;
+  @extend .error;
+ }
+ 
+/* users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  clear: both;
+  li {
+    float: none;
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:last-child {
+      border-bottom: 1px solid $grayLighter;
+    }
+  }
+}
+
+.gravatar {
+  float: left;
+  margin-right: 10px;
+}
